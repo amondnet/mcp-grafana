@@ -7,11 +7,11 @@
   },
   "homepage": "https://github.com/grafana/mcp-grafana",
   "repository": "https://github.com/grafana/mcp-grafana",
-  "license": "AGPL-3.0",
+  "license": "Apache-2.0",
   "mcpServers": {
     "grafana": {
-      "command": "${CLAUDE_PLUGIN_ROOT}/.claude-plugin/install-binary.sh",
-      "args": []
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/.claude-plugin/install-binary.mjs"]
     }
   }
 }
